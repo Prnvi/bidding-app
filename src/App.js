@@ -1,18 +1,18 @@
 import React from "react";
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import MainPage from "./Components/MainPage";
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p>
-         Tailwind for Bidding app!
-        </p>
+    <div>
+         <Router>
+          <Routes>
+            <Route path="/" element={<MainPage/>}/>
+           </Routes>
+        </Router>
        
-      </header>
     </div>
   );
 }
